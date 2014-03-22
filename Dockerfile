@@ -4,7 +4,7 @@ MAINTAINER Ben Firshman "ben@orchardup.com"
 RUN apt-get install -y python-software-properties
 RUN add-apt-repository ppa:chris-lea/node.js
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
-RUN apt-get -qq update && apt-get install -y sudo curl unzip nodejs
+RUN apt-get -qq update && apt-get install -y sudo curl unzip nodejs vim-tiny git
 RUN curl -L https://en.ghost.org/zip/ghost-0.3.2.zip > /tmp/ghost.zip
 RUN useradd ghost
 RUN mkdir -p /opt/ghost
